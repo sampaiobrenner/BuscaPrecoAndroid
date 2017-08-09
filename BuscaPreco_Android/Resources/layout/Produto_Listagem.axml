@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayoutPsqProduto"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:id="@+id/edListaProduto_Pesquisa"
+                android:layout_marginLeft="4dp"
+                android:hint="Nome / Cod.Barras" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayoutListagemProdutos_Botoes"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="0">
+            <ImageButton
+                android:src="@android:drawable/ic_menu_search"
+                android:layout_width="58.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgBtnListagemProduto_Pesquisar"
+                android:layout_gravity="right" />
+            <ImageButton
+                android:src="@android:drawable/ic_menu_camera"
+                android:id="@+id/btnListagemProduto_BiparCodigo"
+                android:layout_width="58.0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lstView_Produto_Listagem" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:background="@android:color/background_light"
+    android:minHeight="25px">
+    <Button
+        android:text="Produtos"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_logar_style"
+        android:id="@+id/btnAreaDeTrabalho_ListagemProdutos"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/produto_caixa_48x48" />
+    <Button
+        android:text="Sincronizar Produtos"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_logar_style"
+        android:id="@+id/btnAreaDeTrabalho_SincronizarProdutos"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/sincronizar_48x48" />
+    <Button
+        android:text="Sincronizar Usuários"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_logar_style"
+        android:id="@+id/btnAreaDeTrabalho_SincronizarUsuarios"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/usuario_48x48"
+        android:visibility="invisible" />
+</LinearLayout>
